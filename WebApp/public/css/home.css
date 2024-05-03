@@ -1,0 +1,118 @@
+main {
+    padding: 20px;
+}
+
+section.banner {
+    text-align: center;
+}
+
+section.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.hero-slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: slide-animation 15s infinite; /* Adjust animation duration */
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  opacity: 1;
+  filter: brightness(50%)
+}
+
+.slide:first-child {
+  opacity: 1; /* Show the first slide initially */
+}
+
+@keyframes slide-animation {
+  0% {
+      transform: translateX(0);
+  }
+  20% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-100%);
+  }
+  45% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(-200%);
+  }
+  70% {
+      transform: translateX(-200%);
+  }
+  75% {
+      transform: translateX(-300%);
+  }
+  100% {
+      transform: translateX(-300%);
+  }
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.outer-grid-container {
+  display: flex;
+  justify-content: center; /* Center the item horizontally */
+  align-items: center; /* Center the item vertically */
+}
+
+.grid-container {
+  position:relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Two columns */
+  gap: 20px; /* Gap between items */
+  width: 50%;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Add border */
+}
+
