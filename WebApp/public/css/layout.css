@@ -1,51 +1,58 @@
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
+* {
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-/* Setting a background color and font for the body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-
-/* Styling the header */
-header {
-    background-color: rgb(77, 120, 214);
-    color: #fff;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* White background */
     padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for a subtle effect */
+  }
+  
+  .logo img {
+    height: 80px;
+  }
+  
+  .nav-links {
+    display: inline-block;
+    margin-left: 20px; /* Adjust the spacing between buttons */
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
     text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
+    color: #333; /* Dark text color */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for color and background color change */
+    }
+  
+  .nav-links li a {
+    border-radius: 15px;
+    padding: 10px 10px;
+    background-color: white;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #333;
+    color: white;
+  }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 2px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: auto;
+}
+.footer p {
+    align-items: start;
 }
 

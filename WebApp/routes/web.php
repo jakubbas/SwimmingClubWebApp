@@ -36,7 +36,7 @@ Route::get('/posts/{id}', function($id){
 Route::get('/search', function(Request $request){
     return ($request->name . ' ' . $request->city);
     //dd($request);
-
+    //
 });
 
 
@@ -47,3 +47,6 @@ Route::get('/home', function () {
     return view('home');
 }); 
 
+Route::get('/swimmer', function () {
+    return view('swimmer');
+}); 

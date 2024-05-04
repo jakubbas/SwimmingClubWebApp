@@ -1,0 +1,20 @@
+body html{
+    background-color: white;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.personal-box {
+    margin-top: 40px;
+    padding: 30px 30px;
+    width: 80%;
+    background-color: rgb(41, 72, 129);
+    color: #fff;
+    border-radius: 30px;
+}

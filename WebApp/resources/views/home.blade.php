@@ -24,9 +24,11 @@
 
     <div class="slide-content">
 
-        <h1> Test </h1>
+        <h1> Join Us Today! </h1>
 
+        <p> Begin your swimming journey. </p>
 
+        <a href="#" class="slide-button">Click Here</a>
     </div>
 
 </div>
@@ -36,12 +38,20 @@
     <section class="grid-container">
 
         <div class="grid-item">
-            <h2>About The Club Section</h2> 
-            <p>Talk about what the club has to offer, try to be concise.</p>
-            <!-- Add more about the club here -->
+            <h2>About The Club</h2> 
         </div>
     
+        <div class="grid-item">
+            <p>Talk about what the club has to offer, try to be concise. Talk about what the club has to offer, try to be concise. Talk about what the club has to offer, try to be concise.</p>
+        </div>
+
+        <div class="grid-item">
+            <h2>Something Else</h2> 
+        </div>
     
+        <div class="grid-item">
+            <p>Talk about what the club has to offer, try to be concise. Talk about what the club has to offer, try to be concise. Talk about what the club has to offer, try to be concise.</p>
+        </div>
     
     </section>
 </div>

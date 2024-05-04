@@ -9,18 +9,20 @@
 
 </head>
 
-<header>
-    <h1>Welcome!</h1>
-    <nav>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About Us</a></li>
-            <li><a href="services.php">Prices</a></li>
-            <li><a href="contact.php">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
-<body>
+<nav class="navbar">
+    <div class="logo">
+      <a href="/home">
+        <img src="images/swimming-logo.jpg" alt="Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/home">Home</a></li>
+      <li><a href="#">Galas</a></li>
+      <li><a href="#">Swimmers</a></li>
+      <li><a href="#">Compare</a></li>
+      <li><a href="#">Log In</a></li>
+    </ul>
+  </nav>
 
 {{-- VIEW OUTPUT--}}
 @yield('default')
