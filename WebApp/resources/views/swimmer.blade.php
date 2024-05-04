@@ -9,8 +9,14 @@
     <div class="grid-container">
 
         <div class="personal-box">
-            <h1>Name</h1>
-            <p> bla bla </p>
+
+            <h2>Surname</h2> {{--{{$user['surname']}}--}}
+            <h2>Forename</h2> {{--{{$user['surname']}}--}}
+
+            <h2>DOB</h2> {{--{{$user['surname']}}--}}
+            <h2>Email</h2> {{--{{$user['surname']}}--}}
+
+
         </div>
 
         <div class="personal-box">
