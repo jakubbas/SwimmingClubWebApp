@@ -44,9 +44,30 @@ Route::get('/home', function () {
     return view('home');
 }); 
 
-Route::get('/swimmer', function () {
-    return view(' ');
+Route::get('/swimmers', function () {
+    return view('/swimmers');
 }); 
+
+Route::get('/search', function (Request $request) {
+    $forename = $request->input('forename');
+    $surname = $request->input('surname');
+
+    // Perform search logic here
+
+    $users = User::where('forename', 'like', "%$forename%")
+    ->where('surname', 'like', "%$surname%")
+    ->get();
+    
+
+    return view('swimmers', [
+        'forename' => $forename,
+        'surname' => $surname,
+        'users' => $users,
+    ]);
+
+})->name('search');
+
+
 
 Route::get('/swimmers/{id}', function ($id) {
     return view('/swimmer', [
@@ -54,17 +75,6 @@ Route::get('/swimmers/{id}', function ($id) {
     ]);
 }); 
 
-Route::get('/search', function(Request $request){
-
-    //$request-> forename
-    //$request-> surname
-    //Grab them from the database, and return correct swimmer.
-
-
-    return ($request->name . ' ' . $request->city);
-    //dd($request);
-    //
-});
 
 Route::get('/register', [UserController::class, 'create']);
 

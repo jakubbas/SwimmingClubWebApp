@@ -18,3 +18,35 @@ body html{
     color: #fff;
     border-radius: 30px;
 }
+
+
+
+#table-records {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#table-records th, #table-records td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Add bottom border to separate rows */
+}
+
+#table-records th {
+    font-weight: bold;
+    background-color: rgb(23, 34, 54);
+}
+
+/* Separate each gala date */
+.table-date {
+    border-top: 2px solid #333; /* Add top border to separate gala dates */
+}
+
+#table-records tbody tr:nth-child(even) {
+    background-color: rgb(99, 129, 180);
+}
+
+#table-records tbody tr:nth-child(odd) {
+    background-color: rgb(41, 72, 129);
+}

@@ -51,4 +51,15 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function galas()
+    {
+        return $this->hasMany(Galas::class, 'user-id');
+    }
+
+    public function swims()
+    {
+        return $this->hasMany(Swims::class, 'user-id');
+    }
+
 }

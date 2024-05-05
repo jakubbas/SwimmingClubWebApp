@@ -18,7 +18,7 @@
     <ul class="nav-links">
       <li><a href="/home">Home</a></li>
       <li><a href="#">Galas</a></li>
-      <li><a href="#">Swimmers</a></li>
+      <li><a href="/swimmers">Swimmers</a></li>
       <li><a href="#">Compare</a></li>
       <li><a href="#">Log In</a></li>
     </ul>

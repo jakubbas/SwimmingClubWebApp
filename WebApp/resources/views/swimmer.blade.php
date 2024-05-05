@@ -20,49 +20,49 @@
 
         <div class="personal-box">
             <h1> Gala Records </h1>
-
-            @php
-
-$galas = [
-    [
-        'date' => '2024-05-10',
-        'records' => [
-            ['swim_type' => 'Freestyle', 'placement' => '1st', 'time' => '1:05.20'],
-            ['swim_type' => 'Backstroke', 'placement' => '2nd', 'time' => '1:15.45'],
-            ['swim_type' => 'Breaststroke', 'placement' => '3rd', 'time' => '1:20.30'],
-        ]
-    ],
-    [
-        'date' => '2024-05-15',
-        'records' => [
-            ['swim_type' => 'Freestyle', 'placement' => '2nd', 'time' => '1:10.15'],
-            ['swim_type' => 'Backstroke', 'placement' => '3rd', 'time' => '1:18.50'],
-            ['swim_type' => 'Breaststroke', 'placement' => '1st', 'time' => '1:12.40'],
-        ]
-    ],
-    // Add more gala records as needed
-];
-            @endphp
-
-            <table id="gala-records">
+            <table id="table-records">
                 <thead>
                     <tr>
                         <th>Date</th>
                         <th>Swim Type</th>
-                        <th>Placement</th>
                         <th>Time</th>
+                        <th>Placement</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($galas as $gala)
-                        @foreach($gala['records'] as $record)
-                            <tr>
-                                <td>{{ $gala['date'] }}</td>
-                                <td>{{ $record['swim_type'] }}</td>
-                                <td>{{ $record['placement'] }}</td>
-                                <td>{{ $record['time'] }}</td>
-                            </tr>
-                        @endforeach
+                    @foreach($user->galas as $gala)
+
+                        <tr>
+                            <td>{{ $gala['gala-date'] }}</td>
+                            <td>{{ $gala['swim-type'] }}</td>
+                            <td>{{ $gala['time'] }}</td>
+                            <td>{{ $gala['place'] }}</td>
+                        </tr>
+
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+        <div> </div>
+
+        <div class="personal-box">
+            <h1> Swim Records </h1>
+            <table id="table-records">
+                <thead>
+                    <tr>
+                        <th>Freestyle</th>
+                        <th>Backstroke</th>
+                        <th>Breaststroke</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($user->swims as $swim)
+                        <tr>
+                            <td>{{ $swim['freestyle-time'] }}</td>
+                            <td>{{ $swim['backstroke-time'] }}</td>
+                            <td>{{ $swim['breaststroke-time'] }}</td>
+                        </tr>
+
                     @endforeach
                 </tbody>
             </table>
