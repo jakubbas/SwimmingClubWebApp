@@ -1,8 +1,13 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Listing;
+
+
+
+use App\Http\Controllers\Controller;
 
 //All Listings
 Route::get('/listings', function () {
@@ -33,14 +38,6 @@ Route::get('/posts/{id}', function($id){
 
 })->where('id', '[0-9]+');
 
-Route::get('/search', function(Request $request){
-    return ($request->name . ' ' . $request->city);
-    //dd($request);
-    //
-});
-
-
-
 //ACTUAL WEBSITE
 
 Route::get('/home', function () {
@@ -48,5 +45,27 @@ Route::get('/home', function () {
 }); 
 
 Route::get('/swimmer', function () {
-    return view('swimmer');
+    return view(' ');
 }); 
+
+Route::get('/swimmers/{id}', function ($id) {
+    return view('/swimmer', [
+        'user'=> User::find($id)
+    ]);
+}); 
+
+Route::get('/search', function(Request $request){
+
+    //$request-> forename
+    //$request-> surname
+    //Grab them from the database, and return correct swimmer.
+
+
+    return ($request->name . ' ' . $request->city);
+    //dd($request);
+    //
+});
+
+Route::get('/register', [UserController::class, 'create']);
+
+Route::post('/users', [UserController::class,'store']);
