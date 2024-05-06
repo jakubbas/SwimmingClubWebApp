@@ -28,7 +28,7 @@
 
         <p> Begin your swimming journey. </p>
 
-        <a href="#" class="slide-button">Click Here</a>
+        <a href="/register" class="slide-button">Click Here</a>
     </div>
 
 </div>

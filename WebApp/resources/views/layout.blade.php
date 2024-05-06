@@ -17,14 +17,20 @@
     </div>
     <ul class="nav-links">
       <li><a href="/home">Home</a></li>
-      <li><a href="#">Galas</a></li>
       <li><a href="/swimmers">Swimmers</a></li>
-      <li><a href="#">Compare</a></li>
+      @auth
+      <li> 
+        <form method="POST" action="/logout" class="logout-form">
+          @csrf
+          <button type="submit" class="logout-button">Log out of {{auth()->user()->name}}</button>
+        </form>
+      </li>
+      @else
       <li><a href="/login">Log In</a></li>
+      @endauth
     </ul>
   </nav>
 
-{{-- VIEW OUTPUT--}}
 @yield('default')
 
 

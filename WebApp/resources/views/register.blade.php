@@ -14,8 +14,8 @@
         <form action="/register" method="POST">
             @csrf 
             <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <label for="name">Username:</label>
+                <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
@@ -53,6 +53,14 @@
         </form>
         <p>Already have an account? <a href="/login">Login here</a></p>
     </div>
+
+    @if ($errors->any())
+    <script>
+        window.onload = function() {
+            alert("{{ implode('\n', $errors->all()) }}");
+        };
+    </script>
+    @endif
     
     </body>
 

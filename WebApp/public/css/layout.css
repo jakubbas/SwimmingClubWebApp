@@ -56,3 +56,20 @@ footer {
     align-items: start;
 }
 
+.logout-form {
+  display: inline-block; /* Ensure form takes up only necessary space */
+}
+
+.logout-button {
+  background-color: #f44336; /* Red background color */
+  color: white; /* White text color */
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.logout-button:hover {
+  background-color: #d32f2f; /* Darker red background color on hover */
+}
