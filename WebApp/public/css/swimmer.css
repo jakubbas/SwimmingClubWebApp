@@ -6,8 +6,8 @@ body html{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    justify-items: center; 
+    align-items: center; 
 }
 
 .personal-box {
@@ -30,7 +30,7 @@ body html{
 #table-records th, #table-records td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd; /* Add bottom border to separate rows */
+    border-bottom: 1px solid #ddd; 
 }
 
 #table-records th {
@@ -38,9 +38,8 @@ body html{
     background-color: rgb(23, 34, 54);
 }
 
-/* Separate each gala date */
 .table-date {
-    border-top: 2px solid #333; /* Add top border to separate gala dates */
+    border-top: 2px solid #333; 
 }
 
 #table-records tbody tr:nth-child(even) {

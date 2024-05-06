@@ -6,13 +6,13 @@ body {
 }
 
 .login-container {
-    width: 400px; /* Adjust width as needed */
+    width: 400px; 
     margin: 100px auto;
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center align content */
+    text-align: center; 
 }
 
 h2 {

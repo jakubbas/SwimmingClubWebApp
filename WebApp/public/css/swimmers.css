@@ -3,20 +3,20 @@ form {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    margin-top: 20px; /* Added margin-top */
+    margin-top: 20px; 
 }
 
 input[type="text"],
 button {
-    padding: 15px; /* Increased padding */
-    font-size: 18px; /* Increased font size */
-    border: 2px solid #ccc; /* Gray border */
-    border-radius: 25px; /* Increased border radius */
+    padding: 15px; 
+    font-size: 18px; 
+    border: 2px solid #ccc;
+    border-radius: 25px; 
 }
 
 input[type="text"] {
     margin-right: 10px;
-    width: 250px; /* Increased input width */
+    width: 250px; 
 }
 
 button {
@@ -30,22 +30,22 @@ button:hover {
 }
 
 .user-box {
-    display: block; /* Make the anchor tag a block-level element */
-    text-decoration: none; /* Remove default underline */
+    display: block; 
+    text-decoration: none; 
     padding: 20px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-bottom: 20px;
-    transition: background-color 0.3s; /* Smooth transition on hover */
+    transition: background-color 0.3s;
 }
 
 .user-box:hover {
-    background-color: #e0e0e0; /* Change background color on hover */
+    background-color: #e0e0e0;
 }
 
 .user-name {
-    margin: 0; /* Reset margin */
+    margin: 0; 
     font-size: 18px;
     color: #007bff;
 }
