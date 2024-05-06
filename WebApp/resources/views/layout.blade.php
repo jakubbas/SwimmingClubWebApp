@@ -20,7 +20,7 @@
       <li><a href="#">Galas</a></li>
       <li><a href="/swimmers">Swimmers</a></li>
       <li><a href="#">Compare</a></li>
-      <li><a href="#">Log In</a></li>
+      <li><a href="/login">Log In</a></li>
     </ul>
   </nav>
 

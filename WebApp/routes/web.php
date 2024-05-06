@@ -48,6 +48,17 @@ Route::get('/login', function () {
     return view('login');
 }); 
 
+Route::get('/register', function () {
+    return view('register');
+}); 
+
+Route::post('/register', function () {
+    
+    
+
+
+}); 
+
 Route::get('/swimmers', function () {
     return view('/swimmers');
 }); 
@@ -80,6 +91,6 @@ Route::get('/swimmers/{id}', function ($id) {
 }); 
 
 
-Route::get('/register', [UserController::class, 'create']);
+//Route::get('/register', [UserController::class, 'create']);
 
-Route::post('/users', [UserController::class,'store']);
+//Route::post('/users', [UserController::class,'store']);
